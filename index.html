@@ -35,10 +35,10 @@
                             <script type="text/javascript">
                                 var blink = document.getElementById('blink');
                                 
-                                const currentDate = new Date();
-                                const startMonth = (currentDate.getMonth()+1).toString().padStart(2,'0');
-                                const endMonth =  (currentDate.getMonth()+3).toString().padStart(2,'0');
-                                blink.textContent = `75${startMonth}${endMonth}2544787`
+                                // const currentDate = new Date();
+                                // const startMonth = (currentDate.getMonth()+1).toString().padStart(2,'0');
+                                // const endMonth =  (currentDate.getMonth()+3).toString().padStart(2,'0');
+                                // blink.textContent = `75${startMonth}${endMonth}2544787`
                                 setInterval(function () {
                                     blink.style.opacity = (blink.style.opacity == 0 ? 2 : 0);
                                 }, 1000);
@@ -67,7 +67,6 @@
                             
                                 document.getElementById("date-start").textContent = formatDate(startDate);
                                 document.getElementById("date-end").textContent = formatDate(endDate);
-                                blink.textContent = `75${startMonth}${endMonth}2544787`
                             </script>
                         </td>
                     </tr>
